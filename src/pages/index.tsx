@@ -32,9 +32,18 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="flex-col justify-center items-center border border-black rounded-xl p-12">
-        {isValid ? (
+        {/* Ternary Operator */}
+        {/* {isValid ? (
           <p className="h-8 mb-3 text-center text-green-500">{message}</p>
         ) : (
+          <p className="h-8 mb-3 text-center text-red-500">{message}</p>
+        )} */}
+
+        {/* AND Operator */}
+        {isValid && (
+          <p className="h-8 mb-3 text-center text-green-500">{message}</p>
+        )}
+        {!isValid && (
           <p className="h-8 mb-3 text-center text-red-500">{message}</p>
         )}
 
